@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>listaProdutosServlet</servlet-name>
+        <servlet-class>br.pucpr.prog4.lojaprodutosOld.controllers.listaProdutosServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProdutoDetalheServlet</servlet-name>
+        <servlet-class>br.pucpr.prog4.lojaprodutosOld.controllers.ProdutoDetalheServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>listaProdutosServlet</servlet-name>
+        <url-pattern>/produto/lista</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProdutoDetalheServlet</servlet-name>
+        <url-pattern>/produto/detalhe</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClienteCadastroServlet</servlet-name>
+        <url-pattern>/Cliente/Cadastro</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
